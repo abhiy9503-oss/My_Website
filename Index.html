@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo Selector</title>
+    <style>
+       body{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        color: azure;
+       }
+
+       header::before{
+            background: url('Images/Final\ Bg.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:109px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+       .navigation{
+        display: flex;
+        font-size: large;
+       }
+
+       section{
+        display: flex;
+        flex-direction: column;
+        /* border:2px solid red; */
+        padding: 10px 20px;
+        margin: 20px 20px;
+        align-items: center;
+        justify-content: center;
+       }
+
+       .item{
+        list-style: none;
+        padding: 30px 23px;
+       }
+        
+       .navbar{
+        display: grid;
+        grid-template-columns: .6fr 4fr .7fr;
+        /* background-color: rgb(95 4 27);
+        opacity: 0.3; */
+        border: 2px solid blac;
+        background-color: rgb(95 4 27);
+        
+       }
+       .logos{
+        display: flex;
+        list-style: none;
+        border-radius: 20px 0px 0px 20px;
+        background-color: white;
+        height: 27px;
+        width: 150px;
+        margin-top: 35px;
+       }
+
+       .logos li a{
+        padding: 7px;
+        background-color: whit;
+        border-radius: 10px;
+        margin-right:7px ;
+       
+       }
+
+       .item a{
+        color:white;
+        text-decoration: none;
+       }
+       .container{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-gap: 1rem;
+       }
+       .box{
+        border: 2px solid rgb(205, 202, 202);
+        height: 300px;
+        border-radius: 15px;
+        text-align: center;
+        
+       }
+
+    </style>
+</head>
+<body>
+ <header>
+    <nav class="navbar">
+        <img src="Images\ChatGPT Image Jun 5, 2025, 04_45_33 PM.png" style="height: 100px; border-radius: 50px; margin-top: 5px; margin-left: 2px;">
+        <ul class="navigation">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="https://www.blogger.com/blog/posts/4461994664664077856?bpli=1&pli=1" target="-blank">Blog</a></li>
+                <li class="item"><a href="Studentsection.html" target="-blank">Student</a></li>
+                <li class="item"><a href="https://www.canva.com/design/DAFtUw9-0K0/ub92Faq53EeeQs1vCX4TZQ/watch?utm_content=DAFtUw9-0K0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="-blank">Events</a></li>
+                <li class="item"><a href="contact.html" target="-blank">Contact Us</a></li> 
+                <li class="item"><a href="downloadpage.html" target="_blank">Downloads</a></li>
+        </ul>
+        
+        <ul class="logos">
+            <li><a href="http://www.linkedin.com"target="_blank"><img src="Images/Main Page/linked in (1).png" height="25px"></a></li>
+            <li><a href="http://twitter.com"target="_blank"><img src="Images/Main Page/twitter.png" alt="Error" height="24px"></a></li>
+            <li><a href="http://instagram.com"target="_blank"><img src="Images/Main Page/insta icon.png" height="25px"></a></li>
+        </ul>
+    </nav>
+</header>  
+    <section>
+       <h3 style="font-size: 30px;">Ready to Dive in Law</h3>
+       <p>If there was no bad people there would be no good lawyers</p>
+    </section> 
+    <marquee style="color: rgb(204, 154, 154);">This Website is Currently Compatiable with PC only</marquee>
+    <br>
+    <div class="container">
+        <div class="box">
+            <h3 style="text-align: center;">Our Services</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi optio rerum repudiandae doloribus, nisi, velit ratione cupiditate error sed blanditiis modi dolore maxime recus.</p>
+        </div>
+        <div class="box">
+            <h3>About US</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ea facilis sed perferendis reiciendis non neque ad blanditiis, velit fuga aliquid delectus deleniti quod nostrum recusandae ducimus provident iste. Non officia repudiandae error, eaque repellat illo ex maxime incidunt dolores, alias sint minus delectus distinctio soluta sapiente aliquam neque eum in! Quae tenetur repudiandae perferendis labore explicabo, voluptate maxime suscipit architecto ex, laborum placeat voluptas dolorum libero cum facilis vel laboriosam laudantium officiis sint. Beatae ipsum veritatis culpa. Perferendis provident earum eos non magnam! Atque qui amet reiciendis iste harum?</p>
+        </div>
+        <div class="box">
+            <h3>What's New</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni, nihil recusandae in aperiam explicabo odio tempora deleniti eum fugiat, voluptates dolores eos id corrupti fugit eaque nemo repellendus fuga non reiciendis praesentium rem placeat reprehenderit est. Iure, nisi consectetur.</p>
+        </div>
+    </div>
+    <p>
+        
+    </p>
+</body>
+</html>
