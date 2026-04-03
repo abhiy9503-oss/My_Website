@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable & Custom Properties</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 120px;
+            margin: 2px 10px;
+            --box-color:white;
+            background-color: var(--box-color);
+            box-shadow: 3px 4px 2px black;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 15px;
+            padding: 25px;
+
+        }
+        .box:hover{
+            transform: scale(106%);
+        }
+        /* #box-7:hover{
+            transform: scale(110%);
+        } */
+        ul{
+            list-style: none;
+        }
+        #box-7{
+            height: 500px;
+            width: 550px;
+            margin: 2px 10px;
+            --box-color:
+            background-color: var(--box-color);
+            text-align: center;
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid black;
+            background-color: white;
+
+        }
+        
+        :root{
+            --box-color:red;
+        }
+        .container{
+            display: flex;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(92, 15, 15);">
+    <div class="container">
+      
+        <ul>
+            <li> <div class="box" id="box-1">Bare Acts<br><br><a href="Bare_Acts.HTML"><img src="Images/student page/BARE-ACTS.png" style="height: 70px; border-radius: 50px;"><a href="downloadpage.html"></a></div></li>
+            <br>
+           <li><div class="box" id="box-2">Articles<br><img src="Images/student page/Articlelogo-removebg-preview.png" style="height:100px;"></div></li>
+             <br>
+             <li> <div class="box" id="box-3">Internships<br><br><img src="Images/student page/importance-of-internship.jpg" style="height: 60px; border-radius: 15px;"></div></li>
+         </ul>
+
+        <ul>
+           <li> <div class="box" id="box-4">Law Websites<br><br><a href="https://www.manupatrafast.com/?t=desktop"><img src="Images/student page/law hammer+book.jpg" style="height: 85px; border-radius: 45px;"></a></div></li>
+           <br>
+          <li><div class="box" id="box-5">Study Material<br><img src="Images/student page/studymaterial-removebg-preview.png" style="height: 110px"></div></li>
+            <br>
+            <li> <div class="box" id="box-6">Books<br><img src="Images/student page/bookslogo-removebg-preview.png" style="height: 110px;"></div></li>
+        </ul>
+        <div id="box-7">
+            this is a box
+        </div>
+    </div>
+</body>
+</html>
