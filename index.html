@@ -9,7 +9,7 @@
         background-color: black;
         margin: 0;
         padding: 0;
-        color: azure;
+        color:#f1f1f1;
        }
 
        header::before{
@@ -31,7 +31,6 @@
        section{
         display: flex;
         flex-direction: column;
-        /* border:2px solid red; */
         padding: 10px 20px;
         margin: 20px 20px;
         align-items: center;
@@ -46,17 +45,15 @@
        .navbar{
         display: grid;
         grid-template-columns: .6fr 4fr .7fr;
-        /* background-color: rgb(95 4 27);
-        opacity: 0.3; */
         border: 2px solid blac;
         background-color: rgb(95 4 27);
-        
        }
+
        .logos{
         display: flex;
         list-style: none;
         border-radius: 20px 0px 0px 20px;
-        background-color: white;
+        background-color: #f2f2f2;
         height: 27px;
         width: 150px;
         margin-top: 35px;
@@ -67,11 +64,10 @@
         background-color: whit;
         border-radius: 10px;
         margin-right:7px ;
-       
        }
 
        .item a{
-        color:white;
+        color:#f1f1f1;
         text-decoration: none;
        }
        .container{
@@ -79,20 +75,124 @@
         grid-template-columns: 1fr 4fr 1fr;
         grid-gap: 1rem;
        }
-       .box{
+       
+      .box{
         border: 2px solid rgb(205, 202, 202);
-        height: 300px;
         border-radius: 15px;
-        text-align: center;
-        
-       }
+        padding: 20px;
+        color: white;
 
+        height: 300px;
+        overflow-y: scroll;
+
+        line-height: 1.6;
+        }
+
+        /* Hide scrollbar */
+        .box::-webkit-scrollbar {
+        display: none;
+        }
+        .box {
+        scrollbar-width: none;
+        }
+
+        .box p{
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 1.6;
+        hyphens: auto;          /* breaks long words properly */
+        word-spacing: -1px;     /* reduces gaps */
+        color: #f1f1f1;
+    }
+/*
+        #whats_new p{
+        background: rgba(255, 215, 0, 0.08);  /* light gold highlight */
+ /*       padding: 8px 10px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        }
+*/
+        .logo {
+        height: 100px;
+        transform: scale(1.5);
+        transform-origin: left center;
+        margin-left: -5px;   /* move left */
+        margin-top: 8px;     /* move down */
+        }
+
+        .logos li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+       /* Mobile responsiveness */
+       @media (max-width: 768px){
+            header::before{
+                top: 80px;
+            }
+
+            .navbar{
+                grid-template-columns: 1fr;
+                justify-items: center;
+                padding: 10px 0;
+            }
+
+            .navigation{
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+                font-size: medium;
+                margin: 10px 0;
+                padding: 0;
+            }
+
+            .item{
+                padding: 8px 10px;
+            }
+
+            .logos{
+                width: auto;
+                height: auto;
+                border-radius: 0;
+                margin-top: 10px;
+                padding: 5px 10px;
+                justify-content: center;
+            }
+
+            section{
+                margin: 10px 10px;
+                padding: 10px 15px;
+                text-align: center;
+            }
+
+            marquee{
+                font-size: 14px;
+            }
+
+            .container{
+                grid-template-columns: 1fr;
+                padding: 0 10px;
+            }
+
+            .box{
+                height: auto;
+                min-height: 180px;
+                width: 100%;
+            }
+
+            /* Make header logo fit mobile better */
+            .navbar img{
+                height: 80px !important;
+                margin: 5px 0 !important;
+            }
+       }
     </style>
 </head>
 <body>
  <header>
     <nav class="navbar">
-        <img src="Images\ChatGPT Image Jun 5, 2025, 04_45_33 PM.png" style="height: 100px; border-radius: 50px; margin-top: 5px; margin-left: 2px;">
+        <img src="Images/LogoFinal.png" class="logo">
         <ul class="navigation">
                 <li class="item"><a href="#">Home</a></li>
                 <li class="item"><a href="https://www.blogger.com/blog/posts/4461994664664077856?bpli=1&pli=1" target="-blank">Blog</a></li>
@@ -103,34 +203,37 @@
         </ul>
         
         <ul class="logos">
-            <li><a href="http://www.linkedin.com"target="_blank"><img src="Images/Main Page/linked in (1).png" height="25px"></a></li>
-            <li><a href="http://twitter.com"target="_blank"><img src="Images/Main Page/twitter.png" alt="Error" height="24px"></a></li>
-            <li><a href="http://instagram.com"target="_blank"><img src="Images/Main Page/insta icon.png" height="25px"></a></li>
+            <li><a href="http://www.linkedin.com"target="_blank"><img src="Images\LinkedinFinal.png" height="30px"></a></li>
+            <li><a href="http://twitter.com"target="_blank"><img src="Images\download__1_-removebg-preview.png" alt="Error" height="20px" ></a></li>
+            <li><a href="http://instagram.com"target="_blank"><img src="Images\Insta.webp" height="30px"></a></li>
         </ul>
     </nav>
 </header>  
     <section>
-       <h3 style="font-size: 30px;">Ready to Dive in Law</h3>
+       <h3 style="font-size: 30px; color:#d6d6d6;" >Ready to Dive in Law</h3>
        <p>If there was no bad people there would be no good lawyers</p>
     </section> 
-    <marquee style="color: rgb(204, 154, 154);">This Website is Currently Compatiable with PC only</marquee>
-    <br>
     <div class="container">
         <div class="box">
             <h3 style="text-align: center;">Our Services</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi optio rerum repudiandae doloribus, nisi, velit ratione cupiditate error sed blanditiis modi dolore maxime recus.</p>
+            <p>We provide advanced legal-tech solutions designed specifically for modern advocates. Our platform simplifies legal workflows by offering live case tracking, daily court orders, government circulars, and intelligent legal research tools, all in one place.
+With state-wise customization, you get relevant and precise legal information without unnecessary clutter. Our goal is to help you save time, improve accuracy, and focus on advocacy instead of manual research.</p>
         </div>
         <div class="box">
-            <h3>About US</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ea facilis sed perferendis reiciendis non neque ad blanditiis, velit fuga aliquid delectus deleniti quod nostrum recusandae ducimus provident iste. Non officia repudiandae error, eaque repellat illo ex maxime incidunt dolores, alias sint minus delectus distinctio soluta sapiente aliquam neque eum in! Quae tenetur repudiandae perferendis labore explicabo, voluptate maxime suscipit architecto ex, laborum placeat voluptas dolorum libero cum facilis vel laboriosam laudantium officiis sint. Beatae ipsum veritatis culpa. Perferendis provident earum eos non magnam! Atque qui amet reiciendis iste harum?</p>
+            <h3 style="text-align: center;">About US</h3>
+            <p>We are a modern LegalTech platform built for advocates across India, with the aim of simplifying legal work through technology. Our platform brings together case tracking, daily court orders, government circulars, and intelligent legal research tools into one unified system.
+
+We understand the challenges faced by legal professionals, from managing multiple cases to staying updated with constantly evolving laws. That is why we focus on delivering accurate, state-wise legal information in a structured and easily accessible format.
+
+Our platform goes beyond traditional legal databases by integrating AI-assisted legal research, enabling advocates to quickly find relevant case laws, summarize judgments, and identify important precedents. This helps in saving valuable time and improving the quality of legal arguments.
+
+</p>
         </div>
-        <div class="box">
-            <h3>What's New</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni, nihil recusandae in aperiam explicabo odio tempora deleniti eum fugiat, voluptates dolores eos id corrupti fugit eaque nemo repellendus fuga non reiciendis praesentium rem placeat reprehenderit est. Iure, nisi consectetur.</p>
+        <div class="box" id="whats_new">
+            <h3 style="text-align: center;">What's New</h3>
+            <p style="color: #f1f1f1;"> <strong>1. Bare Acts Section Now Live</strong><br>Access important bare acts in a clean, readable, and structured format
         </div>
     </div>
-    <p>
-        
-    </p>
+    <p></p>
 </body>
 </html>
